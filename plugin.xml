@@ -27,6 +27,11 @@
     </platform>
 
     <platform name="wp8">
+
+        <js-module src="www/fileopener.js" name="FileOpener">
+            <clobbers target="window.plugins.fileOpener" />
+        </js-module>
+        
         <config-file target="config.xml" parent="/*">
             <feature name="FileOpener">
                 <param name="wp-package" value="FileOpener"/>
